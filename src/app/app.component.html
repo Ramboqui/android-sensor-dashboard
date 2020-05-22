@@ -1,26 +1,72 @@
-<h1>Dashboard</h1>
-<div class="ui-g">
+<div class="p-grid container">
+    <div class="p-col-12 title">
+        <h1>Programação Mobile</h1>
+    </div>
 
-    <table style="width:100%; text-align: center; border: 2px inset black">
-        <tr>
-            <th>ID</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Luminosidade</th>
-            <th>Proximidade</th>
-            <th>Temperatura</th>
-            <th>Umidade</th>
-        </tr>
-        <tr *ngFor="let sensor of sensors">
-            <td>{{sensor.id}}</td>
-            <td>{{sensor.position.latitude}}</td>
-            <td>{{sensor.position.longitude}}</td>
-            <td>{{sensor.luminosity}}</td>
-            <td>{{sensor.proximity}}</td>
-            <td>{{sensor.temperature}}</td>
-            <td>{{sensor.humidity}}</td>
-        </tr>
-    </table>
+    <p-table #dt [value]="sensors" styleClass="ui-table-customers" [rowHover]="true" [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading" [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        sortMode="multiple">
+        <ng-template pTemplate="caption">
+            Dashboard
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Luminosidade</th>
+                <th>Proximidade</th>
+                <th>Temperatura</th>
+                <th>Umidade</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-sensor>
+            <tr class="ui-selectable-row">
+                <td>
+                    {{sensor.position.latitude}}
+                </td>
+                <td>
+                    {{sensor.position.longitude}}
+                </td>
+                <td>
+                    {{sensor.luminosity}}
+                </td>
+                <td>
+                    {{sensor.proximity}}
+                </td>
+                <td>
+                    {{sensor.temperature}}
+                </td>
+                <td>
+                    {{sensor.humidity}}
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8" style="text-align:left">No customers found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+    <div class="p-col-12 alunos">
+        <div class="p-col-4 aluno">
+            <h3>
+                Gabriel do Nascimento Trindade
+                <br> 1718260
+            </h3>
+        </div>
+        <div class="p-col-4 aluno">
+            <h3>
+                Guilherme Aguilera Viana
+                <br> 1718260
+            </h3>
+        </div>
+        <div class="p-col-4 aluno">
+            <h3>
+                Matheus Custodio de Souza
+                <br> 1718260
+            </h3>
+        </div>
+    </div>
 </div>
 
 <router-outlet></router-outlet>

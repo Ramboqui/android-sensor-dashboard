@@ -1,0 +1,60 @@
+:host ::ng-deep .ui-table-customers {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    .ui-paginator {
+        .ui-dropdown {
+            float: left;
+        }
+        .ui-paginator-current {
+            float: right;
+        }
+    }
+    .ui-progressbar {
+        height: 8px;
+        background-color: #D8DADC;
+        .ui-progressbar-value {
+            background-color: #00ACAD;
+        }
+    }
+    .ui-table-caption {
+        border: 0 none;
+        padding: 12px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .ui-paginator {
+        border: 0 none;
+        padding: 1em;
+    }
+    .ui-table-thead>tr>th {
+        border: 0 none;
+        text-align: left;
+        &.ui-filter-column {
+            border-top: 1px solid #c8c8c8;
+        }
+    }
+    .ui-table-tbody>tr>td {
+        border: 0 none;
+        cursor: auto;
+    }
+    .ui-table-tbody>tr>td .ui-column-title {
+        display: none;
+    }
+}
+
+.container {
+    background-color: #ffe9b0b3;
+}
+
+.title {
+    text-align: center;
+}
+
+.alunos {
+    position: absolute;
+    bottom: 50px;
+    display: inline-flex;
+}
+
+.aluno {
+    text-align: center;
+}
