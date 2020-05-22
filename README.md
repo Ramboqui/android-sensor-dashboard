@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
+## Ao Professor
+O Site/Dashboard encontra-se hospedado em: https://android-sensor-front.herokuapp.com/
+Se desejar executar em local:
+  Baixe o Node.JS;
+  Baixe o repositório;
+  Com um prompt de comando na pasta do projeto execute npm i (Provavelmente pode demorar um pouco);
+  Execute no prompt o comando ng serve;
+  Abra http://localhost:4200/;
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
