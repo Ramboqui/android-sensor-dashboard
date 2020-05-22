@@ -10,6 +10,15 @@ Se desejar executar em local:
   Com um prompt de comando na pasta do projeto execute npm i (Provavelmente pode demorar um pouco);
   Execute no prompt o comando ng serve;
   Abra http://localhost:4200/;
+  
+Gabriel do Nascimento Trindade
+1894375
+
+Guilherme Aguilera Viana
+1874480
+
+Matheus Custodio de Souza
+1718260
 
 ## Development server
 
