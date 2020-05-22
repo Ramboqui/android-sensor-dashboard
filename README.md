@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
+## Descrição
+Pagina Angular para exibição do Dashboard com os valores
+
 ## Ao Professor
 O Site/Dashboard encontra-se hospedado em: https://android-sensor-front.herokuapp.com/
 Se desejar executar em local:
